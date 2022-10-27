@@ -11,21 +11,26 @@
 </head>
 <body>
     <header>
-        <nav class="menu">
-            <a class="menu-index" href="index">
-                 <img src="resources/iconAirePunta4.png" class="imgHeader" alt="Aire Punta">
-            </a>
+        <nav class="menu" id="menu">
+
+            <img src="resources/iconAirePuntaLogo.png"  class="imgHeaderLogo" alt="Aire Punta">
+            
             <h1>aire punta</h1>
+
             <ul>
-                <li><img src="resources/iconAirePunta9.png" alt="inicio"></li>
-                <li> 
-                    <a class='menu-about' href='#'> sobre nosotros </a>   
+                <li>
+                    <a href='#index'>
+                        <img src="resources/iconAirePunta4.png" alt="inicio" >
+                    </a>
                 </li>
                 <li> 
-                    <a class='menu-service' href='#'> servicios </a>
+                    <a class='menu-about' href='#about-us'> sobre nosotros </a>   
+                </li>
+                <li> 
+                    <a class='menu-service' href='#manteniment'> servicios </a>
                 </li>
                 <li>
-                    <a class='menu-contact' href="#"> contacto </a> 
+                    <a class='menu-contact' href="#contact"> contacto </a> 
                 </li>
             </ul>
         </nav>
@@ -33,51 +38,66 @@
 
     <article id="index">
         
-        <h2>Aire Aconducionado</h2>
+        
+        <h2>Aire Acondicionado</h2>
         
         <section id="section-index">  
 
             <span class="index-text">
                 <span class="index-text-first">
-                    <p id="first-text-p"> Sentite fresco y Cómodo.</p>
-                    <p id="second-text-p"> Disfruta del aire.</p>
+                    <h2 id="section-index-h2">
+                        Sentite fresco y Cómodo.
+                        <br>
+                         Disfruta del aire.
+                    </h2>
                 </span>
 
-                <span class="index-text-second">
-                    <p> disfrute de un clima adecuado al confort de su necesidad </p>
+                <span class="index-section-p">
+                    <p> Disfrute de un clima adecuado al confort 
+                        <br>
+                        de su necesidad
+                    </p>
                 </span>
             </span>
 
-            <span class="index-img">
+            <span class="index-section-img">
                 <img src="resources/woman.jpg" alt="aire punta">
             </span>
 
         </section>
-
+    
     </article>
 
-    <article id="abaout-us">
+    <article id="about-us">
         <section>
-            <img src="resources/iconoAirePunta.png">
             <h2> Sobre Nosotros </h2>
-            <p>
-                Somos una empresa fundada hace 12 años, trabajamos con servicios de refrigeración tanto 
-                industrial como comercial y familiar. Tenemos equipos especializados, mejor precio calidad en el mercado, 
-                garantía responsable. Contáctenos para mas información haciendo clic en el botón.
-            </p>
+            <div class="about-container">
+            <img src="resources/iconAirePuntaLogo.png">
+            <div class="about-content-p">
+                <p>
+                    Somos una empresa fundada hace 12 años, trabajamos con servicios de refrigeración tanto 
+                    industrial como comercial y familiar.
+                    <br>
+                    Tenemos equipos especializados, mejor precio calidad en el mercado, 
+                    garantía responsable. Contáctenos para mas información haciendo clic en el botón.
+                </p>
+            </div>
+
+        </div>
         </section>
     </article>
     
-    <article id="manteniment">
-        <section class="manteniment-manteniment">
+    <article id="maintenance">
+
+        <section class="maintenance-manteniment">
                 <h2>Mantenimiento</h2>
                 <p>
                     El mantenimiento adecuado ayuda a la vida útil del equipo y su correcto funcionamiento. 
                     El servicio incluye la limpieza de serpentina y filtros, control de carga de gas y consumo del equipo
                 </p>
-
         </section>
-        <section class="manteniment-install-AC">
+
+        <section class="maintenance-install-AC">
             <h2>Instalación de aire acondicionado</h2>
             <p>
                 La instalación de un aire no sólo consiste en elegir la potencia adecuada para el ambiente, 
@@ -85,7 +105,7 @@
             </p>
         </section>
         
-        <section class="manteniment-repair">
+        <section class="maintenance-repair">
             <h2>Reparación</h2>
             <p>
                 Sí notas que el equipo tiene bajo rendimiento, no tira el frío o el calor suficiente, o 
