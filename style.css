@@ -41,7 +41,7 @@ nav {
     padding-right: 15px;
     background-color: rgba(255, 255, 255, 0.72);
     backdrop-filter: saturate(180%) blur(20px);
-    
+    white-space: nowrap;
     justify-content: space-between;
     display: flex;
     justify-content: end;
@@ -86,9 +86,8 @@ nav .menu-contact{
     border: 1px solid royalblue;
     color: white;
     border-radius: 8px;
-    padding: 8px 16px;
     white-space: nowrap;
-    width: 250px;
+    display: block;
     
 }
 
@@ -155,6 +154,21 @@ article section img{
 .index-section-p{
     font-size: 22px;
     color: #343434;
+}
+
+nav a::after{
+    content: "";
+    background-color: #0c4700;
+    display: block;
+    height: 2px;
+    width: 100%;
+    margin-top: 5px;
+    transform: scaleX(0);
+    transition: transform .26s cubic-bezier(.4,0,.2,1);
+}
+
+nav a:hover:after {
+    transform: scaleX(1);
 }
 
 article{
